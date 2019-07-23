@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lunbotupian</title>
+	<style>
+		* {
+			margin:0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+			cursor: pointer;
+		}
+		.tb {
+			width: 520px;
+			height: 280px;
+			background-color: pink;
+			margin: 100px auto;
+			position: relative;
+		}
+		.tb a {
+			display: none;
+		}
+		.tb a.current {
+			display: block;
+		}
+		.tb span {
+			display: block;
+			height: 36px;
+			width: 24px;
+			position: absolute;
+			top: 50%;
+			margin-top: -18px;
+			cursor: pointer;
+		}
+		.tb ul {
+			display: block;
+			width: 70px;
+			height: 13px;
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			margin-left: -35px;
+			background: rgba(255,255,255,.3);
+			border-radius: 10px;
+		}
+		.tb ul li {
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			float: left;
+			border-radius: 50%;
+			margin:3px;
+		}
+		.left {
+			left: 0;
+			/*background: url(images/left.png) no-repeat;*/
+		}
+		.right {
+			right: 0;
+			/*background: url(images/right.png) no-repeat;*/
+		}
+		.tb ul li.selected {
+			background-color: #f40;
+		}
+	</style>
+</head>
+<body>
+	<div class="tb">
+		<a href="#" class="current"><img src="images/1.jpg"/></a>
+		<a href="#"><img src="images/2.jpg"/></a>
+		<a href="#"><img src="images/3.jpg"/></a>
+		<a href="#"><img src="images/4.jpg"/></a>
+		<a href="#"><img src="images/5.jpg"/></a>
+		<span class="left"><</span>
+		<span class="right">></span>
+		<ul class="ul">
+			<li class="selected"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script src="js/common.js"></script>
+	<script src="js/轮播图.js"></script>
+</body>
+</html>
